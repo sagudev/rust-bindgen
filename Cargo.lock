@@ -855,3 +855,8 @@ checksum = "fe5c30ade05e61656247b2e334a031dfd0cc466fadef865bdcdea8d537951bf1"
 dependencies = [
  "winapi",
 ]
+
+[[patch.unused]]
+name = "bindgen"
+version = "0.68.1"
+source = "git+https://github.com/sagudev/rust-bindgen.git?branch=f16#ee0c03f00241c8955fdba06876db3e6f7253ddda"

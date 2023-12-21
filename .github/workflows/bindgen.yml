@@ -120,7 +120,7 @@ jobs:
     runs-on: ${{matrix.os}}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, macos-latest, windows-latest]
     steps:
       - uses: actions/checkout@v3
 
@@ -177,6 +177,13 @@ jobs:
 
           # Ensure stuff works on macos too
           - os: macos-latest
+            llvm_version: "9.0"
+            release_build: 0
+            no_default_features: 0
+            feature_extra_asserts: 0
+
+          # Ensure stuff works on win too
+          - os: windows-latest
             llvm_version: "9.0"
             release_build: 0
             no_default_features: 0
