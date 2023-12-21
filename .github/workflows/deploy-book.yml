@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - win-ci
 
 jobs:
   deploy-book:
